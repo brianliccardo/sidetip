@@ -1,7 +1,7 @@
 # sidetip.js
 
 ### A jQuery plugin for displaying tooltip off the the side
-# When doing the position it will do the opposite if there is not enough room. IE if set to left it will go on the right.
+#### When doing the position it will do the opposite if there is not enough room. IE if set to left it will go on the right.
 
 ## Options
 - delay			: The delay on hover the sidetip fades in (default 400)
