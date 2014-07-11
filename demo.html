@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Sidetip Demo</title>
+
+		<!-- Bootstrap -->
+		<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+		<link type="text/css" rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/redmond/jquery-ui.min.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="jumbotron">
+				<h2 class="text-center">Side Tip Demo</h2>
+				<button type="button" id="st1">Example 1</button>
+				<div id="example_1_text" style="display: none;">
+					This is text for example 1 side tip.
+				</div>
+
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="sidetip/sidetip.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('#st1').sidetip({ele:'example_1_text',pos:'left'});
+			});
+		</script>
+	</body>
+</html>
