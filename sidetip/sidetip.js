@@ -1,6 +1,6 @@
 /**
  * Sidetip jquery plugin
- * @version 0.0.2
+ * @version 0.0.3
  * @author Brian Liccardo <brianliccardo@gmail.com>
  * works with either hidden elements or ajax content
  */
@@ -36,8 +36,8 @@
 				
 				this.sidetip = $('#'+this.data_ele);
 			} else if (this.options.html !== false) {
+				this.sidetip = $('#sidetip');
 				this.mode = 'html';
-				
 			}
 			
 			// attach events
@@ -151,7 +151,7 @@
 			
 			var pos = this._getPos(this.sidetip);
 
-			this.sidetip.css({position: "absolute", marginLeft: 0, marginTop: 0,top: pos.top, left: pos.left});
+			this.sidetip.css({position: "absolute", marginLeft: 0, marginTop: 0,top: pos.top, left: pos.left, zIndex:1000});
 
 			this.sidetip.fadeIn(300)
 		}
